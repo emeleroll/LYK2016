@@ -76,25 +76,25 @@ cd dizin_adi
 ~~~
 Dizinler arası geçiş yapmaya yarar. Örneğin dizin1 ve dizin2 adında 2 tane dizinimiz olsun. cd dizin1 komutu ile dizin1 'e geçiyoruz. Fakat daha sonra dizin2 'ye geçmek için cd dizin2 komutunu kullandığımızda hata alacağız. Bunun nedeni dizin1'in içerisindeyken cd dizin2 dememizdir. 
 
-**cd yazıp dizin_adi belirtmezsek bizi home dizinimize yönlendirir.Daha sonra home dizininin ne anlama geldiğini anlatacağım. Şuanlık kodlarımızı yazarken burda olduğumuzu bilelim. ~ işaretinden anlayabilirsiniz.** 
+cd yazıp dizin_adi belirtmezsek bizi home dizinimize yönlendirir.Daha sonra home dizininin ne anlama geldiğini anlatacağım. Şuanlık kodlarımızı yazarken burda olduğumuzu bilelim. **~** işaretinden anlayabilirsiniz.
 ~~~bash
 cd ../dizin2
 ~~~
-Buradaki .. bir üst dizini belirtir. Bu şekilde dizin2'ye ulaşmış oluruz.
+Buradaki **..** bir üst dizini belirtir. Bu şekilde dizin2'ye ulaşmış oluruz.
 ~~~bash
 mv dosya1 yenidosyaadi
 ~~~
 mv komutu dosya ismini değiştirmemizi ve ayrıca dosyayı taşımamızı sağlar.Bu şekilde kullandığımızda varolan dosya1 isimli dosyayının adını yenidosyaadi yapar. 
 
--Home dizinimizde **(~)** iki tane dizinimiz olsun. dizin1 ve dizin2. 
+- Home dizinimizde **(~)** iki tane dizinimiz olsun. dizin1 ve dizin2. 
 dizin1'in içerisinde **tasinacakdosya** adında bir dosya olsun ve bunu dizin2'ye taşıyalım. 
--Bunun için cd dizin1 diyerek dizin1'e geçebiliriz.Daha sonra aşağıdaki komutu kullanabiliriz.
+- Bunun için cd dizin1 diyerek dizin1'e geçebiliriz.Daha sonra aşağıdaki komutu kullanabiliriz.
 ~~~bash
 mv ./tasinacakdosya ../dizin2
 ~~~
 Bu komutun anlamı : dizin1'in içerisindeki **(. şuan bulunduğum dizin)** tasinacakdosya adlı dosyayı al bir üst dizindeki **(..)** dizin2 isimli dizine taşı.
 
--Aynı işlemleri ilk başta dizin1'e geçmeden de yapabiliriz.
+- Aynı işlemleri ilk başta dizin1'e geçmeden de yapabiliriz.
 ~~~bash
 mv dizin1/tasinacakdosya dizin2
 ~~~
@@ -103,7 +103,7 @@ Hangisi daha kolayınıza gelirse :)
 cp dosya1 kopya
 ~~~
 Bir dosyayı kopyalamaya yarar. 
--Farklı bir dizine kopyalama:
+- Farklı bir dizine kopyalama:
 ~~~bash
 cp dosya1 dizin2/kopya
 ~~~
@@ -116,21 +116,12 @@ Sisteme ne kadar süredir bağlı olduğumuzu gösterir.
 reboot
 ~~~
 Reset atar. Ctrl+R kısayoludur.
--Linux'un en önemli komutu man'dir. 
+
+- Linux'un en önemli komutu man'dir. 
 ~~~bash
 man komut
 ~~~
 Bilgi edinmek istediğimiz komutun nasıl kullanıldığı ve komutun ne işe yaradığı gibi bilgilerin olduğunu gösterir. Komutun sahip olduğu tüm parametreleri ve anlamlarını açıklar. Bu komut sayesinde Linux hakkında hiçbir bilgisi olmayan kişiler rahatlıkla Linux kullanabilir.
-
-
-
-
-
-
-
-
-
- 
 
 
 
