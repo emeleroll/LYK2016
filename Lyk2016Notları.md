@@ -116,7 +116,6 @@ Sisteme ne kadar süredir bağlı olduğumuzu gösterir.
 reboot
 ~~~
 Reset atar. Ctrl+R kısayoludur.
-
 - Linux'un en önemli komutu man'dir. 
 ~~~bash
 man komut
