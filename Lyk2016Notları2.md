@@ -1,7 +1,7 @@
 # Linux Dosya Sistemi Yapısı
 Hangi dizinde olduğumuzu **pwd** komutuyla öğreniyorduk. Peki bu dizinler tam olarak ne işe yarıyor, bunu öğrenelim.
 Bu yapıda her dosya **/** simgesiyle ifade edilen **kök dizin**in altındadır.
-Kök dizinin **/** altında
+Kök dizinin altındaki dizinler;
 - /bin
 - /boot
 - /dev
@@ -23,44 +23,45 @@ Kök dizinin **/** altında
 - /usr/bin
 - /var
 - /proc
-dizinleri bulunur.
-## /bin
+
+- **/bin**
 Temel ve gerekli kullanıcı komutlarının saklandığı dizindir.
-## /boot
+- **/boot**
 Linux çekirdeği burada bulunur. Bilgisayarın açılmasında yardımcı olur.
-## /lib
+- **/lib**
 Kütüphane dosyaları burada bulunur.
-## /lost+found
+- **/lost+found**
 Sistem çökmesi veya çalışır durumdaki sürücü/bölüm bağlantısı kopması gibi durumlarda kurtarılabilen dosyaların saklandığı dizindir.
-## /home
+- **/home**
 Bir kullanıcının giriş yapabilmesi için gereken dizindir. Kullanıcıların masaüstü bilgilerini içerir. 
-## /media & /mount 
+- **/media & /mount** 
 Flash Bellek, CD gibi cihazların dosyaları bu klasörde bulunur.
-## /proc 
+- **/proc** 
 Sistem ile ilgili bilgiler bu dizinde tutulur.
-## /run
+- **/run**
 Programların çalışma id'leri bulunur.
-## /sys 
+- **/sys** 
 Çalışan sisteme müdahale edebilmemiz için vardır.
-## /sbin
+- **/sbin**
 Root kullanıcısının çalıştırabileceği programlar burada bulunur.
-## /srv
+- **/srv**
 Web Sunucu dosyaları burada bulunur.
-## /tmp
+- **/tmp**
 Bu dizinde geçiçi olarak dosya yazıp silebiliriz. Sistemin bütün kullanıcıları dosya yazabilir fakat bir başka kullanıcının dosyalarına müdahale edilemez.
-## /var 
+- **/var** 
 Sistemimizin kayıtları burada tutulur.
-## /dev
+- **/dev**
 Donanım aygıtlarının dosyaları burada bulunur.
-## /etc
+- **/etc**
 Sistemin yapılandırma dosyalarını içerir.
-## /usr
+- **/usr**
 Yüklediğimiz her program dosyaları /usr dizininde tutulur.
-## /opt 
+- **/opt** 
 Dağıtımdan bağımsız ekstra yüklenen paketler için kullanılır.
 ## Root: 
 Sistemdeki en yetkili kullanıcı yani yöneticidir.
-Her kullanıcının kendisine ait bir **/home/** dizini bulunur. Normal bir kullanıcının home dizini **/home/kullaniciadi** olur. Fakat Root'un /home dizini **/root**tur. 
+Her kullanıcının kendisine ait bir **/home/** dizini bulunur. Normal bir kullanıcının home dizini **/home/kullaniciadi** olur.
+Fakat Root'un /home dizini **/root**tur. 
 
 ## Dosya Yetkileri-Türleri
 Bir dizinin içerisinde **ls -l** komutunu kullandığımızda en solda 
@@ -75,13 +76,16 @@ Peki rwx nedir bunu inceleyelim.
 - r : read(dosyayı okuma izni)
 - w : write(dosyaya yazma izni)
 - x : execute(dosyayı çalıştırma izni)
-Dosyanın türünden sonraki ilk üç tanesi dosyanın sahibinin (user) yetkilerini belirtir. Burdan anlayacağımız dosya sahibi full yetkiye **(rwx)** sahiptir. Dosya sahibinden sonra üç tanesi grubun yetkilerini belirtir. Daha sonraki üçlü de diğer kullanıcıların (others) yetkileridir. Örneğimizdeki diğer kullanıcıların yazma yetkisi yoktur. 
+Dosyanın türünden sonraki ilk üç tanesi dosyanın sahibinin (user) yetkilerini belirtir. Burdan anlayacağımız dosya sahibi 
+full yetkiye **(rwx)** sahiptir. Dosya sahibinden sonra üç tanesi grubun yetkilerini belirtir. 
+Daha sonraki üçlü de diğer kullanıcıların (others) yetkileridir. 
+Örneğimizdeki diğer kullanıcıların yazma yetkisi yoktur. 
 Bunlar dışında s ve t vardır.
 - s : suid(secure user id) 
 Dosyanın sahibinin yetkilerine sahip olur. 
 - t : sticky
-Temp dosyalarında bulunur. Her kullanıcının dosya oluşturma, yazma, kendi dosyalarını silme yetkileri vardır. Fakat başka bir kullanıcının 
-dosyasını silemezler. 
+Temp dosyalarında bulunur. Her kullanıcının dosya oluşturma, yazma, kendi dosyalarını silme yetkileri vardır. 
+Fakat başka bir kullanıcının dosyasını silemezler. 
 
 */dev dizinindeki bazı dosyaları inceleyelim.*
 - sda : harddisk 
@@ -96,10 +100,10 @@ dosyasını silemezler.
 Shadow dosyasında parolalar **SHA512** hash algoritmasıyla şifrelenmektedir. 
 *Shadow dosyasının içerisinden örnek bir satır inceleyelim.*
 kullaniciadi:$6$7gNvdbpz$c6fb024a22c4db9101ea1d20596034../:15758:0:99999:7:::
-$6 = Sha-512 hash algoritması.
-$7gNvdbpz = Salt değeri.
-$6fb024a22c4db9101ea1d20596034.. = Parola
-:15758= Son şifre değişikliği tarihi(gün sayısı)
-:0 = Şifre değişiklikleri arasındaki minimum süre.
-:99999 = Şifrenin maksimum geçerlilik süresi (gün sayısı)
-:7 = Hesap kapatıldıktan sonra parolanın dolma süresi
+- $6 = Sha-512 hash algoritması.   
+- $7gNvdbpz = Salt değeri.  
+- $6fb024a22c4db9101ea1d20596034.. = Parola
+- :15758= Son şifre değişikliği tarihi(gün sayısı)
+- :0 = Şifre değişiklikleri arasındaki minimum süre.
+- :99999 = Şifrenin maksimum geçerlilik süresi (gün sayısı)
+- :7 = Hesap kapatıldıktan sonra parolanın dolma süresi
