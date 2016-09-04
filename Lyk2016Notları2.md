@@ -76,10 +76,11 @@ Peki rwx nedir bunu inceleyelim.
 - r : read(dosyayı okuma izni)
 - w : write(dosyaya yazma izni)
 - x : execute(dosyayı çalıştırma izni)
+
 Dosyanın türünden sonraki ilk üç tanesi dosyanın sahibinin (user) yetkilerini belirtir. Burdan anlayacağımız dosya sahibi 
 full yetkiye **(rwx)** sahiptir. Dosya sahibinden sonra üç tanesi grubun yetkilerini belirtir. 
-Daha sonraki üçlü de diğer kullanıcıların (others) yetkileridir. 
-Örneğimizdeki diğer kullanıcıların yazma yetkisi yoktur. 
+Daha sonraki üçlü de diğer kullanıcıların (others) yetkileridir.
+Örneğimizdeki diğer kullanıcıların yazma yetkisi yoktur.
 Bunlar dışında s ve t vardır.
 - s : suid(secure user id) 
 Dosyanın sahibinin yetkilerine sahip olur. 
@@ -98,6 +99,8 @@ Fakat başka bir kullanıcının dosyasını silemezler.
 - passwd : kullanıcıların id numaraları , home dizinlerini gösterir. 
 - shadow : kullanıcıların parola bilgileri tutulur. (şifrelenmiş biçimde)
 Shadow dosyasında parolalar **SHA512** hash algoritmasıyla şifrelenmektedir. 
+
+
 *Shadow dosyasının içerisinden örnek bir satır inceleyelim.*
 kullaniciadi:$6$7gNvdbpz$c6fb024a22c4db9101ea1d20596034../:15758:0:99999:7:::
 - $6 = Sha-512 hash algoritması.   
