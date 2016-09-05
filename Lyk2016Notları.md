@@ -47,6 +47,10 @@ touch dosya1 dosya2
 ~~~ 
 Birden fazla dosya oluşturmak için dosya isimlerini yan yana yazmamız yeterlidir.
 ~~~bash
+touch dosyaadi{1..10}
+~~~
+Bu yöntemle birden fazla dosyayı kolayca oluşturabiliriz. dosyaadi1 , dosyaadi2 .. dosyaadi10 ' a kadar. 
+~~~bash
 mkdir DİZİN_ADI
 ~~~
 Dizin oluşturmaya yarar.
@@ -71,6 +75,14 @@ Dizinleri silmek için kullanılır ancak dizinin içerisi doluysa hata verir.
 rm -r dizin_adi
 ~~~
 İçerisi dolu olan bir dizini silmek için -r parametresini kullanırız. 
+~~~bash
+rm -rf
+~~~
+-f parametresi "silmek istediğinize emin misiniz" gibi soruları önler.
+~~~bash 
+rm -rf dosya[12345]
+~~~
+Aynı anda isimleri dosya1,dosya2.. şeklinde giden 5 dosyayı silmemizi sağlar.
 ~~~bash
 cd dizin_adi
 ~~~
@@ -121,7 +133,5 @@ Reset atar. Ctrl+R kısayoludur.
 man komut
 ~~~
 Bilgi edinmek istediğimiz komutun nasıl kullanıldığı ve komutun ne işe yaradığı gibi bilgilerin olduğunu gösterir. Komutun sahip olduğu tüm parametreleri ve anlamlarını açıklar. Bu komut sayesinde Linux hakkında hiçbir bilgisi olmayan kişiler rahatlıkla Linux kullanabilir.
-
-
 
 
