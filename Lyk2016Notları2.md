@@ -106,7 +106,7 @@ kullaniciadi:$6$7gNvdbpz$c6fb024a22c4db9101ea1d20596034../:15758:0:99999:7:::
 - $6 = Sha-512 hash algoritması.   
 - $7gNvdbpz = Salt değeri.  
 - $6fb024a22c4db9101ea1d20596034.. = Parola
-- :15758= Son şifre değişikliği tarihi(gün sayısı)
-- :0 = Şifre değişiklikleri arasındaki minimum süre.
-- :99999 = Şifrenin maksimum geçerlilik süresi (gün sayısı)
+- :15758= Son parola değişikliği tarihi(gün sayısı)
+- :0 = Parola değişiklikleri arasındaki minimum süre.
+- :99999 = Parolanın maksimum geçerlilik süresi (gün sayısı)
 - :7 = Hesap kapatıldıktan sonra parolanın dolma süresi
