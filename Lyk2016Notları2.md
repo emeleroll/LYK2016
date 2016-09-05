@@ -79,6 +79,7 @@ Peki rwx nedir bunu inceleyelim.
 - x : execute(dosyayı çalıştırma izni)
 
 **(Type) | (user) | (group) | (other)**
+
 -| – - – | – - – | – - -
 
 Dosyanın türünden sonraki ilk üç tanesi dosyanın sahibinin (user) yetkilerini belirtir. Burdan anlayacağımız dosya sahibi 
