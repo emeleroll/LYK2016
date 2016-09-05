@@ -58,6 +58,7 @@ Sistemin yapılandırma dosyalarını içerir.
 Yüklediğimiz her program dosyaları /usr dizininde tutulur.
 - **/opt** 
 Dağıtımdan bağımsız ekstra yüklenen paketler için kullanılır.
+
 ## Root: 
 Sistemdeki en yetkili kullanıcı yani yöneticidir.
 Her kullanıcının kendisine ait bir **/home/** dizini bulunur. Normal bir kullanıcının home dizini **/home/kullaniciadi** olur.
