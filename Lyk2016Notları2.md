@@ -66,7 +66,7 @@ Fakat Root'un /home dizini **/root**tur.
 
 ## Dosya Yetkileri-Türleri
 Bir dizinin içerisinde **ls -l** komutunu kullandığımızda en solda 
-*drwxr-xr-x.*
+**drwxr-xr-x.**
 şeklinde harfler görürüz.Bunları inceleyelim.
 En solda bulunan d harfi **directory(dizin)** anlamına gelir. Dosyamızın türünü belirtir. **-** normal dosya (txt,jpg,png gibi) anlamına gelir. 
 - b : block (/dev dizininde görülür) 
@@ -81,6 +81,8 @@ Peki rwx nedir bunu inceleyelim.
 **(Type) | (user) | (group) | (other)**
 
 -| – - – | – - – | – - -
+
+**drwxr-xr-x.**
 
 Dosyanın türünden sonraki ilk üç tanesi dosyanın sahibinin (user) yetkilerini belirtir. Burdan anlayacağımız dosya sahibi 
 full yetkiye **(rwx)** sahiptir. Dosya sahibinden sonra üç tanesi grubun yetkilerini belirtir. 
