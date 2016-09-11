@@ -128,3 +128,15 @@ Paketleri güncellemeye yarar.
 yum provides /etc/ssh
 ~~~
 Bir dosyanın hangi pakete ait olduğunu öğrenebilmemizi sağlar.
+~~~bash
+yum history
+~~~
+Güncelleme geçmişini gösterir.
+~~~bash
+yum history undo
+~~~
+Yaptığımız güncellemeyi geri alır. 
+~~~bash
+yum history redo
+~~~
+Geri aldığımız güncellemeyi tekrar eski haline çevirir.
