@@ -47,7 +47,7 @@ Cron ayarlarını sıfırlamak için komutunu girebilirsiniz.
 ~~~bash
 tar
 ~~~
-- Arşivleme dosyaları birleştirme , sıkıştırma dosyanın boyutunu küçültmek için kullanılır.
+*Arşivleme dosyaları birleştirme , sıkıştırma dosyanın boyutunu küçültmek için kullanılır.*
 ~~~bash
 tar -cf deneme.tar arsivlenecekdosya1.txt arsivlenecekdosya2.txt
 ~~~
