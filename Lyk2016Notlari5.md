@@ -79,7 +79,9 @@ tar -rf deneme.tar dosya3.txt
 
 ## SIKIŞTIRMA ALGORİTMALARI 
 Kayıplı ve kayıpsız sıkıştırma olarak ikiye ayrılırlar. Kayıplı sıkıştırma verilerde bozulmaya yol açabilir. Örneğin bir JPEG dosyasını sıkıştırdığımızda sıkıştırma katsayısına göre resmin kalitesi bozulur. 
+
 **Huffman Encoding:** Kayıpsız veri sıkıştırma tekniğidir. Daha çok metin tabanlı verilerde kullanılır.
+
 **LZW:** Sıkıştırma oranı en yüksek algoritmalardan biridir. Kayıpsız sıkıştırma işlemi yapar.
 ~~~bash
 gzip dosya.txt
