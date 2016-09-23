@@ -136,13 +136,22 @@ dmesg çıktısındaki sda/sdb/hda gibi kelimeleri gösterir.
 **Fiziksel katman:** Bu katman verinin hangi yolla gönderileceği belirlenir. İletişim ortamının özelliklerini, haberleşme hızını ve kodlama şemasını belirler. Ethernet, Wi-Fi, Token Ring, ATM gibi protokoller bu katmanda çalışır.
 
 **Port:** Aynı ip üzerinde birden fazla servis verebilmek için port kullanılır.
+
 **Protocol:** Bilgisayarlar arası iletişimi yönetirler.
+
 **DHCP:** Ağdaki bilgisayarlara otomatik ip veren protokoldür.
+
 **ICMP:** Ağ geçitlerinde hata raporlama için kullanılan protokoldür.
+
 **DNS:** Alan Adı isimlerini IP’ye çevirmek için kullanılan bir sistemdir. Örnek : 192.168.70.110 yerine www.google.com domain adresini yazmak gibi. 
+
 **Gateway:** Farklı ağı kullanan iki bilgisayar arasında veri çerçevelerinin iletimini sağlar. 
+
 **Broadcast:** Ağdaki bilgisayarların çevresini tanımak için yaydığı sinyaller bütünüdür. Başka bilgisayarlarla iletişimimizi sağlar.
+
 **NAT:** Ağ içerisinde kullanılan bir IP adresinin baska bir network içerisinde bilinen baska bir IP adresine çevirilmesidir.
+
 **Netmask:** Bir adres alanını subnetlere böler. 
+
 **Subnet:** Kullandığımız ipler boşa gitmesin diye küçük küçük ağlara bölme işlemidir.
  
