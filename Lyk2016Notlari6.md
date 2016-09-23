@@ -104,11 +104,17 @@ dmesg çıktısındaki sda/sdb/hda gibi kelimeleri gösterir.
 
 ## NETWORK - 101 
 **Network:** Bilgisayar, yazıcı, kamera ve faks gibi çeşitli cihazların mevcut kaynakları ortak kullanımına olanak sağlayan ve veri iletimi gerçekleştiren yapılara ağ (network) denir. Ağ bağlantısı aynı mekandaki cihazlar arasında gerçekleştirilebileceği gibi, şehirler, ülkeler ve kıtalar arası ağ bağlantıları da kurulabilir.
+
 **İnternet:** Birbiriyle tüm dünya üzerinde yayılmış bilgisayar ağlarının birleşiminden oluşan devasa bir bilgisayar ağıdır.
+
 **LAN (Local Area Network):** LAN’larda temel amaç, aynı yapı içinde kullanılan bilgisayarların bazı donanımları paylaşmasını, ortak çalışma ortamını sağlayarak zamandan tasarruf edilmesi sayesinde bilginin hızlı bir şekilde okunması ve işlenmesini sağlamaktır.
+
 **PAN (Personal Area Network):** PAN kişisel cihazların birbiriyle bağlanması sonucu elde edilen kişisel ağdır. (Telefon , USB gibi)
+
 **WAN (Wide Area Network):** LAN'ların birbirlerine bağlanmasını sağlayan çok geniş ağlardır. 
+
 **MAN (Metropol Area Network):** MAN genellikle bir şehir veya geniş bir yerleşkede kullanılan bilgisayar ağıdır. Bir MAN, genellikle fiber optik bağlantılar gibi yüksek kapasiteli backbone teknolojisini kullanarak Lan lar arasında bağlantı kurar, internet ve WAN için bağlantı hizmetleri sağlar.
+
 **OSI Referans Modeli:** Verinin, kullanıcının uygulamasından kablolara giden iletişim paketinin hangi aşamalardan geçeceğini tanımlayan sistemdir.
 7 katmandan oluşur.
 - Uygulama Katmanı
