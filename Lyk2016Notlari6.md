@@ -140,6 +140,7 @@ dmesg çıktısındaki sda/sdb/hda gibi kelimeleri gösterir.
 **Ağ katmanı:** IP katmanı olarak da adlandırılan bu katman da verilerin gideceği adres veriye eklenir yani veri bu katmandan gönderilir ve yönlendirilir. IPv4 ün gelecekte yetersiz kalma durumuna karşı IPv6 sistemine geçmek için çalışmalar başlatılmıştır.IPv4 32 bit iken IPv6 ile 128 bitlik adresler kullanılacak. Bu sayede daha fazla cihaza IP adresi atanabilecek.
 
 **Fiziksel katman:** Bu katman verinin hangi yolla gönderileceği belirlenir. İletişim ortamının özelliklerini, haberleşme hızını ve kodlama şemasını belirler. Ethernet, Wi-Fi, Token Ring, ATM gibi protokoller bu katmanda çalışır.
+![Alt text](http://www.oocities.org/siliconvalley/platform/4063/arastirma/tcpipveinternet/images/01.htm7.jpg " ")
 
 **Port:** Aynı ip üzerinde birden fazla servis verebilmek için port kullanılır.
 
