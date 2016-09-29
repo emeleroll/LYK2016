@@ -3,18 +3,31 @@ Bir dosyanın içerisindeki arattığımız metni bulup başka bir metinle deği
 Bir dosya oluşturalım ve içerisine 
 
 Fatih elmasuyu
+
 Suzan portakalsuyu
+
 Melih kavunsuyu
+
 Melih kavunsuyu
+
 Rasim kirazsuyu
+
 Tarık portakalsuyu
+
 Lale şeftalisuyu
+
 Suzan portakalsuyu
+
 Melih kayısısuyu
+
 Ayşe mangosuyu
+
 Galip havuçsuyu
+
 Osman karpuzsuyu
+
 Betül narsuyu 
+
 alt alta olacak şekilde yazalım. 
 ~~~bash
 sed 's/portakalsuyu/limonata/g' dosyaadi
@@ -55,19 +68,33 @@ awk '{print $1}' dosyaadi
 ~~~
 Az önceki dosyamız için bu komutu yazarsak 1. sütunu yani isim listesini ekrana getirir. 
 Varolan dosyamızı şu şekilde düzenleyelim.
+
 Fatih elmasuyu       5      7
+
 Suzan portakalsuyu   3      9
+
 Melih kavunsuyu      2      5
+
 Melih kavunsuyu      7      2
+
 Rasim kirazsuyu      8      4
+
 Tarık portakalsuyu   4      5
+
 Lale şeftalisuyu     5      2
+
 Suzan portakalsuyu   1      8
+
 Melih kayısısuyu     2      5
+
 Ayşe mangosuyu       6      3
+
 Galip havuçsuyu      7      8
+
 Osman karpuzsuyu     3      5
+
 Betül narsuyu        5      1
+
 olarak değiştirelim. 
 ~~~bash
 awk '{sonuc=$3*$4; print $0 ,sonuc}' dosyaadi
