@@ -1,10 +1,15 @@
 ## SED (STREAM EDITOR)
 Bir dosyanın içerisindeki arattığımız metni bulup başka bir metinle değiştirmeye yarar.
 Bir dosya oluşturalım ve içerisine 
+
 Fatih elmasuyu
+
 Suzan portakalsuyu
+
 Melih kavunsuyu
+
 Melih kavunsuyu
+
 Rasim kirazsuyu
 Tarık portakalsuyu
 Lale şeftalisuyu
