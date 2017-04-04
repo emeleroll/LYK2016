@@ -98,7 +98,7 @@ Fakat başka bir kullanıcının dosyasını silemezler.
 */dev dizinindeki bazı dosyaları inceleyelim.*
 - sda : harddisk 
 - sda1 : harddisk üzerinde bölümlendirme yaptıysak görünür
-- random : harddiske rastgele numaralar verir
+- random : rastgele sayı oluşturur
 - zero : harddiski 0 ile doldurur
 
 */etc dizinindeki bazı dosyaları inceleyelim.*
