@@ -51,7 +51,7 @@ Bu dizinde geçiçi olarak dosya yazıp silebiliriz. Sistemin bütün kullanıc�
 - **/var** 
 Sistemimizin kayıtları burada tutulur.
 - **/dev**
-Donanım aygıtlarının dosyaları burada bulunur.
+Donanım aygıtlarını dosya olarak bulunur.
 - **/etc**
 Sistemin yapılandırma dosyalarını içerir.
 - **/usr**
@@ -105,7 +105,7 @@ Fakat başka bir kullanıcının dosyasını silemezler.
 - group : sistemde hangi grupların olduğunu gösterir
 - passwd : kullanıcıların id numaraları , home dizinlerini gösterir. 
 - shadow : kullanıcıların parola bilgileri tutulur. (şifrelenmiş biçimde)
-Shadow dosyasında parolalar **SHA512** hash algoritmasıyla şifrelenmektedir. 
+Shadow dosyasında parolalar **SHA512** hash algoritması ile özetlenir.
 
 
 *Shadow dosyasının içerisinden örnek bir satır inceleyelim.*
